@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy Birthday!</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 id="greeting"></h1>
+		<p>Wishing you a wonderful birthday filled with joy and fun!</p>
+		<!-- Example GIFs / images -->
+		<img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Birthday GIF" class="gif">
+		<!-- Button to go to extra page -->
+		<button onclick="location.href='extra.html'">More Wishes</button>
+	</div>
+	<script>
+
+     // Retrieve the name from localStorage and set the greeting
+
+     const name = localStorage.getItem('userName') || 'Guest';
+
+     document.getElementById('greeting').innerText = `Happy Birthday, ${name}!`;
+	</script>
+</body>
+</html> 
